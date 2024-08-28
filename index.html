@@ -3,37 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAN4THOT - Home</title>
+    <title>Code Joy Academy</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>LAN4THOT</h1>
+        <div class="logo">
+            <img src="I will add the logo hear" alt="Code Joy Academy Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="banner">
-            <h2>Revolutionizing Education Through Independent Thinking and Problem Solving</h2>
-            <a href="contact.html" class="cta">Enroll Now</a>
-        </section>
-        <section class="intro">
-            <h3>Welcome to LAN4THOT</h3>
-            <p>LAN4THOT is a virtual academy providing students with a great emphasis on system thinking, problem-solving, and the art of thinking.</p>
-        </section>
-        <!-- Additional sections like testimonials, highlights, and latest blog posts can go here -->
-    </main>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Welcome to Code Joy Academy</h2>
+            <p>People used to go to school to learn how to do their homework and pass their exams. Today everyone needs to learn how to grade their homework. This is the huge difference because someday if you want to do anything in the world, the first thing you’ll do is ask ChatGPT. The role of a person in the world is going to be to solve problems. Code Joy Academy is a virtual academy providing students with a great emphasis on system thinking, problem solving, the art of thinking, and computer programming.</p>
+            <button onclick="scrollToSection('services')">Explore Our Services</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1721468184185-214871ec4411?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Online Learning" class="about-image">
+            <div class="about-text">
+                <h3>Mission Statement:</h3>
+                <p>"Our mission is to revolutionize education by fostering independent thinking and problem-solving skills in students from primary to senior high school. By offering a structured curriculum, personalized learning plans, and supplemental resources across the International British Curriculum, Pearson Edexcel, and Kenyan 8-4-4/2-6-6-3 systems, we empower students to develop their unique ways of thinking and excel academically and beyond."</p>
+                
+                <h3>Vision Statement:</h3>
+                <p>"Our vision is to be the leading global platform for innovative homeschooling, where students are inspired to think critically and creatively. We envision a future where our students are equipped with the skills to navigate and solve the complex challenges of the world, becoming lifelong learners and influential thinkers. Through continuous adaptation and embracing educational advancements, we aim to set a new standard in homeschooling that transcends traditional learning boundaries."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Online/Virtual Academy</h3>
+                <p>Structured online classes following International British Curriculum, Pearson Edexcel, and Kenyan systems (8-4-4 & CBC). Interactive virtual classrooms with live teaching and recorded sessions.</p>
+            </div>
+            <div class="service">
+                <h3>Homeschooling & Private Tuition</h3>
+                <p>Personalized in-home tutoring for individuals or small groups. Tailored learning plans to meet specific student needs.</p>
+            </div>
+            <div class="service">
+                <h3>Christian Education</h3>
+                <p>Faith-based education integrating Christian values and teachings.</p>
+            </div>
+            <div class="service">
+                <h3>Exam Preparation</h3>
+                <p>Comprehensive coaching for exams with a focus on mastery and confidence.</p>
+            </div>
+            <div class="service">
+                <h3>Coding & Programming</h3>
+                <p>Coding classes aimed at developing programming and computational thinking skills.</p>
+            </div>
+            <div class="service">
+                <h3>Special Needs Education</h3>
+                <p>Tailored programs for students with Autism, Down Syndrome, physical disabilities, and other special needs. Inclusive education plans and specialized support.</p>
+            </div>
+            <div class="service">
+                <h3>Future Prospect Services</h3>
+                <p>Technical skill-based curricula such as crocheting, music, sewing, drawing, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="mailto:codejoy07@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 LAN4THOT. All rights reserved.</p>
+        <p>&copy; 2024 Code Joy Academy. All rights reserved.</p>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -6,13 +6,13 @@ body {
 }
 
 header {
-    background: #333;
+    background-color: #0056b3;
     color: #fff;
-    padding: 1em 0;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
+header .logo h1 {
     margin: 0;
 }
 
@@ -23,63 +23,144 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 1em;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-main {
-    padding: 2em;
-    background: #fff;
-    margin: 2em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
 .banner {
-    background: #4CAF50;
+    background-image: url('https://images.unsplash.com/photo-1629360057380-18b15b42e650?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 2em;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-.banner .cta {
-    background: #fff;
-    color: #4CAF50;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border-radius: 5px;
+h2 {
+    font-size: 2em;
+    color: #004080;
 }
 
-.intro, .about, .services, .contact, .login {
-    margin-bottom: 2em;
+h3 {
+    font-size: 1.5em;
+    color: #0056b3;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.service p {
+    text-align: left;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 form label {
-    margin-bottom: 0.5em;
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 
-form input, form textarea, form button {
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
+form input, form textarea {
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.contact-info {
-    margin-top: 2em;
+form button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #333;
+    background-color: #0056b3;
     color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
